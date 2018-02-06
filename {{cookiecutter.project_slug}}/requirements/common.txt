@@ -1,0 +1,11 @@
+Django
+django-celery
+django-environ
+django-configurations
+django-redis
+djangorestframework-filters
+djangorestframework
+djangorestframework-jwt
+psycopg2
+coreapi
+whitenoise

@@ -1,0 +1,10 @@
+{
+    "full_name": "Pengfei Tian",
+    "email": "itsneo1990@gmail.com",
+    "github_username": "itsneo1990",
+    "project_name": "Django rest microservice",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "A nice django restframework template.",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+    "version": "0.1.0"
+}
