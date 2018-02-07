@@ -1,7 +1,6 @@
 # __author__ = {{cookiecutter.full_name}}
-from rest_framework import serializers
-
 from api.models import Demo
+from rest_framework import serializers
 
 
 class DemoSerializer(serializers.ModelSerializer):

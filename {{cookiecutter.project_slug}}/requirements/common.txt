@@ -1,7 +1,6 @@
 Django
 django-celery
 django-environ
-django-configurations
 django-redis
 djangorestframework-filters
 djangorestframework

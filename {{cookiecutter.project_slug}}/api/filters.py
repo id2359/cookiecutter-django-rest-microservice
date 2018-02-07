@@ -1,6 +1,6 @@
 # __author__ = {{cookiecutter.full_name}}
-from api.models import Demo
 import rest_framework_filters as filter
+from api.models import Demo
 
 
 class DemoFilter(filter.FilterSet):

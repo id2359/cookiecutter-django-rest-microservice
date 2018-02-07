@@ -6,8 +6,6 @@ services:
       dockerfile: compose/Dockerfile
     env_file: .env
     command: /gunicorn.sh
-    volumes: &ref_1
-      - './:/code'
     ports:
       - '5000:5000'
     restart: always
@@ -15,19 +13,16 @@ services:
     build: *ref_0
     env_file: .env
     command: /start-celeryworker.sh
-    volumes: *ref_1
     restart: always
   celerybeat:
     build: *ref_0
     env_file: .env
     command: /start-celerybeat.sh
-    volumes: *ref_1
     restart: always
   flower:
     build: *ref_0
     env_file: .env
     command: /start-flower.sh
-    volumes: *ref_1
     ports:
       - '5555:5555'
     restart: always
