@@ -1,0 +1,34 @@
+__author__ = "itsneo1990"
+
+import logging
+
+import redis
+
+from .common import *
+
+DEBUG = True
+ALLOWED_HOSTS = ['*']
+ADMIN_URL = 'admin/'
+
+INSTALLED_APPS += ['nplusone.ext.django', ]
+
+DATABASES = {'default': env.db_url_config("postgres://itsneo1990:itsneo1990@localhost:5432/itsneo1990")}
+DATABASES['default']['ATOMIC_REQUESTS'] = True
+DATABASES['default']['CONN_MAX_AGE'] = 60
+
+MIDDLEWARE += [
+    'nplusone.ext.django.NPlusOneMiddleware',
+]
+
+SECRET_KEY = 'CHANGEME!!'
+
+NPLUSONE_LOGGER = logging.getLogger('nplusone')
+NPLUSONE_LOG_LEVEL = logging.WARN
+
+REDIS_POOL = redis.ConnectionPool.from_url(url="redis://localhost:6379")
+
+BROKER_URL = "redis://192.168.2.214:6379/0"
+
+JWT_AUTH = {
+    'JWT_SECRET_KEY': 'CHANGEME!!'
+}

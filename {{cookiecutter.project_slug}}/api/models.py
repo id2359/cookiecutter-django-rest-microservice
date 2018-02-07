@@ -2,5 +2,5 @@
 from django.db import models
 
 
-class Demo(models.Model):
+class {{cookiecutter.default_model}}(models.Model):
     pass

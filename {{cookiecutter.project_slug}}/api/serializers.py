@@ -1,8 +1,8 @@
 # __author__ = {{cookiecutter.full_name}}
-from api.models import Demo
+from api.models import {{cookiecutter.default_model}}
 from rest_framework import serializers
 
 
-class DemoSerializer(serializers.ModelSerializer):
+class {{cookiecutter.default_model}}Serializer(serializers.ModelSerializer):
     class Meta:
-        model = Demo
+        model = {{cookiecutter.default_model}}

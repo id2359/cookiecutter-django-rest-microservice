@@ -1,6 +1,6 @@
 # __author__ = {{cookiecutter.full_name}}
 
-from api.models import Demo
+from api.models import {{cookiecutter.default_model}}
 from django.contrib import admin
 
-admin.site.register(Demo)
+admin.site.register({{cookiecutter.default_model}})
