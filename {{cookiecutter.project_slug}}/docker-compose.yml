@@ -19,10 +19,3 @@ services:
     env_file: .env
     command: /start-celerybeat.sh
     restart: always
-  flower:
-    build: *ref_0
-    env_file: .env
-    command: /start-flower.sh
-    ports:
-      - '5555:5555'
-    restart: always

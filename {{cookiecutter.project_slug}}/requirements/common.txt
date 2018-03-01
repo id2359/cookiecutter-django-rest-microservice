@@ -5,6 +5,6 @@ django-redis
 djangorestframework-filters
 djangorestframework
 djangorestframework-jwt
-psycopg2
+psycopg2-binary
 coreapi
 whitenoise
